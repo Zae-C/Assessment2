@@ -1,0 +1,9 @@
+v=input(" Enter Score ")
+v= int(v)
+
+if v>= 9000:
+    print("WOW")
+elif v<100:
+    print("Git Gud")
+elif v>100 & v<9000:
+    print("Keep trying")
