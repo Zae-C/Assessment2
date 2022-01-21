@@ -1,0 +1,25 @@
+
+class cheese:
+    def __init__(self,x,y):
+        print("I am cheese, I am at:")
+        self.xpos=x
+        print(x,"x")
+        self.ypos=y
+        print(y,"y")
+        self.isMelted = 0 #0= not melted, 1 = melted
+    def melt(self):
+        self.isMelted = 1
+        print("Your cheese has melted")
+          
+posx=input("enter number")
+posx=int(posx)
+posy=input("enter number")
+posy=int(posy)
+c1=cheese(posx,posy)
+c12=cheese(100,100)
+        
+z = input("Would you like to melt your cheese? Answer 'z' if you do")
+if z == 'z':
+    c1.melt()
+elif z != 'z':
+    print("Cheese remains intact")
